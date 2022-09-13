@@ -38,7 +38,8 @@ Thus,
 $$
   \sum_{i=1}^n 4x_i  = 4(\sum_{i=1}^n x_i)
 $$
-#
+
+Another example:
 $$
 \begin{aligned}
   \sum_{i=1}^3 (x_i+y_i) &= (x_1 + y_1) + (x_2 + y_2) + (x_3 + y_3)  \\
