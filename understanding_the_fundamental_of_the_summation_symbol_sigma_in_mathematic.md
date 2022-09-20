@@ -40,32 +40,41 @@ $$
 $$
 
 Another example:
+
 $$
 \begin{aligned}
   \sum_{i=1}^3 (x_i+y_i) &= (x_1 + y_1) + (x_2 + y_2) + (x_3 + y_3)  \\
                           &= x_1 + x_2 + x_3 + y_1 + y_2 + y_3
 \end{aligned}
 $$
+
 Thus,
+
 $$
   \sum_{i=1}^n (x_i+y_i)   = \sum_{i=1}^n x_i + \sum_{i=1}^n y_i
 $$
 
 ## Attention
 We must not confund the following expressions pairs. Because the expression:
+
 $$
   \sum_{i=1}^n x_iy_i
 $$
+
 is not the same as:
+
 $$
   (\sum_{i=1}^n x_i)(\sum_{i_1}^n y_i)
 $$
 
 And the expression
+
 $$
   \sum_{i=1}^n x_i^2
 $$
+
 is not the same as:
+
 $$
   (\sum_{i=1}^n x_i)^2
 $$
@@ -75,6 +84,7 @@ Let's explorer further on why that is by subsituting some arbitrary numbers into
 For example, given $i=1$, $n = 3$, $x_1 = 4$, $x_2 = 2$, $x_3 = 7$ and $y_1 = 2$, $y_2 = 2$, $y_3 = 3$:
 
 Conclusion 1,
+
 $$
 \begin{aligned}
   \sum_{i=1}^n x_iy_i &\neq (\sum_{i=1}^n x_i)(\sum_{i=1}^n y_i) \\
@@ -85,6 +95,7 @@ $$
 $$
 
 Conclusion 2,
+
 $$
 \begin{aligned}
   \sum_{i=1}^n x_i^2        &\neq (\sum_{i=1}^n x_i)^2 \\
@@ -98,6 +109,7 @@ $$
 Summation doubles are just simply summation of a summation, the below expression are the ones you'll likely encounter when you're dealing with double sums.
 
 The basic double sum expression:
+
 $$
 \begin{aligned}
  \sum_{i=1}^m x_i \sum_{j=1}^n y_j &= \sum_{i=1}^m \sum_{j=1}^n x_i y_j
@@ -105,6 +117,7 @@ $$
 $$
 
 Let's replace some arbitrary numbers into upperbounds of the summations to explore them:
+
 $$
 \begin{aligned}
  \sum_{i=1}^3 \sum_{j=1}^2 x_i y_j &= \sum_{i=1}^3 (x_iy_1 + x_iy_2) \\
@@ -113,6 +126,7 @@ $$
 $$
 
 Less general case:
+
 $$
 \begin{aligned}
 (\sum_{i=1}^n x_i)^2 &= \sum_{i=1}^n x_i \sum_{j=1}^n x_j \\
@@ -134,6 +148,7 @@ $$
 $$
 
 Exploring relation 1:
+
 $$
 \begin{aligned}
 \sum_{i=1}^3 x_i \sum_{j=1}^3 x_j   &= (x_1+x_2+x_3)(x_1+x_2+x_3) \\
@@ -142,6 +157,7 @@ $$
 $$
 
 Exploring relation 2:
+
 $$
 \begin{aligned}
 \sum_{i=1}^3 \sum_{j=1}^3 x_i x_j   &= \sum_{i=1}^3 (x_ix_1 + x_ix_2 + x_ix_3) \\
@@ -151,6 +167,7 @@ $$
 $$
 
 Explanation for last relation:
+
 $$
 \begin{aligned}
 \sum_{i=1}^3 x_i^2 + \sum_{i=1}^3 \sum_{j=1}^n x_i x_j (i \neq j)
@@ -188,6 +205,7 @@ Let's visualize the data with a table.
 To figure out the sum of the terms of a row, we fix the index of the row and vary for all possible values, the index of the column.
 
 For exmaple:
+
 $$
 \sum_{j=1}^3 x_{1j} = x_{11} + x_{12} + x_{13} + x_{14} = 2 + 4 + 5 + 1 = 12
 $$
@@ -197,11 +215,9 @@ To carry out the summation of the whole of the table, we vary both indices and u
 $$
 \begin{aligned}
   \sum_{i=1}^3 \sum_{j=4}^4 &= \sum_{i=3}^3 x_{i1} +x_{i2} +x_{i3} +x_{i4}  \\
-  &= x_{11} + x_{12} + x_{13} + x_{14} + x_{21} + x_{22} + x_{23} + x_{24} 
-  + x_{31} + x_{32} + x_{33} + x_{34} \\
+  &= x_{11} + x_{12} + x_{13} + x_{14} + x_{21} + x_{22} + x_{23} + x_{24} + x_{31} + x_{32} + x_{33} + x_{34} \\
   &= 2 + 4 + 5 + 1 + 1 + 8 + 3 + 2 + 11 + 9 + 2 + 3  \\
   &= 51
-  
 \end{aligned}
 $$
 
